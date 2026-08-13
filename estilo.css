@@ -424,7 +424,7 @@ section h2 {
 
 .proyecto-destacado {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 360px 1fr;
   gap: 32px;
   align-items: center;
   background: var(--bg-card);
@@ -435,14 +435,19 @@ section h2 {
 }
 
 .proyecto-destacado-visual {
-  height: 180px;
+  height: 220px;
   border-radius: var(--radius-md);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 56px;
-  color: var(--accent);
+  gap: 4px;
+  overflow: hidden;
   background: linear-gradient(150deg, rgba(200, 241, 53, 0.14), transparent);
+}
+
+.proyecto-destacado-visual img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .proyecto-destacado-info h3 {
