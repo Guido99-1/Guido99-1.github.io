@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Guido</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpeg" alt="">
+            </div>
+            <h1>GUIDO REYES</h1>
+            <h2>Desarrollador Full Stack</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/guido-fabricio-reyes-pullugando-440091277"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.link/hzhmv8"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/guido.reyes.79"><i class="fa-brands fa-facebook-f"></i></a>
+                <!-- <a href="https://www.instagram.com/guido_r_/"><i class="fa-brands fa-instagram"></i></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Guido Reyes.</span> Soy ingeniero en Tecnologías de la información y Desarrollador Full Stack . Cuento con gran motivación para avanzar en mi carrera profesional, me destaco por mi compromiso y responsabilidad. Además, valoro la oportunidad de aprender y crecer profesionalmente. Siempre estoy buscando nuevas formas de mejorar mis habilidades y mantenerme actualizado con los últimos avances en tecnología. Creo firmemente en la importancia de la colaboración y la comunicación efectiva, y estoy ansioso por contribuir a un entorno de trabajo dinámico y estimulante.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Estado civil</strong>
+                            Soltero
+                        </li>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            13-05-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            0969079341
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            guidoreyes99@outlook.es
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Tungurahua - Baños de Agua Santa
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://guido99-1.github.io/
+                        </li>
+                        <li>
+                            <strong>linkedin</strong>
+                            https://www.linkedin.com/in/guido-fabricio-reyes-pullugando-440091277
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-laptop-code"></i>
+                            <span>PROGRAMACIÓN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </head> -->
+            <div>  
+                <button> 
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <a href="https://drive.google.com/file/d/1I28rMctBKIK4lIeUWoMJvIx5d83UcuSK/view?usp=sharing">
+                <span class="overlay"></span></a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+
+                <!-- Technical Skill -->
+                
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Css</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Professional Skills -->
+                
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad de resolver problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptación y aprendizaje continuo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    <!-- SECCION CURRICULUM -->
+    
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Administración de Sistemas</h4>
+                        <span class="casa">Unidad Educativa Baños</span>
+                        <span class="fecha">2011 - 2017</span>
+                        <p>Bachillerato Técnico en Sistemas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ing. Tecnologías de la Información</h4>
+                        <span class="casa">Univeridad Técnica de Ambato</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>
+                            <ul>
+                                <li>
+                                    Soporte, administración, diseño de telecomunicaciones y sistemas informáticos.
+                                </li>
+                                <li>
+                                    Programación de software.
+                                </li>
+                                <li>
+                                    Analista de sistema.
+                                </li>
+                            </ul>
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Cursos</h3>
+                    <div class="item izq">
+                        <h4>Pentesting Web</h4>
+                        <span class="casa">Undemy</span>
+                        <span class="fecha">Junio 2023</span>
+                        <p>Prácticas de un Ethical Hacker Profesional</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Python 3 Plus</h4>
+                        <span class="casa">Undemy</span>
+                        <span class="fecha">Septiembre 2023</span>
+                        <p>Python desde cero - Data Anlysis and Matploy</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SQL Bootcamp</h4>
+                        <span class="casa">Undemy</span>
+                        <span class="fecha">Septiembre 2023</span>
+                        <p>Learn Enough SQL to be a profesional</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programación en Python</h4>
+                        <span class="casa">Academia BA</span>
+                        <span class="fecha">Septiembre 2023</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Tecnico Redes</h4>
+                        <span class="casa">Premier TvNET</span>
+                        <span class="fecha">2022</span>
+                        <p>Instalación de internet, mantenimiento de líneas, trabajo en altura y manejo de fibra óptica.
+                            Aptitudes: 
+                            <ul>
+                                <li>Interconexión de redes IP</li>
+                                <li>Servicios técnicos</li> 
+                                <li>Mantenimiento preventivo</li> 
+                                <li>Instalación de hardware</li> 
+                                <li>Atención al cliente</li> 
+                                <li>Mantenimiento y reparaciones de equipos</li> 
+                                <li>Redes inalámbricas</li> 
+                                <li>Redes de fibra óptica</li> 
+                            </ul>       
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://www.imagineecuador.com/es/" style="text-decoration:none;text-decoration-color:azure">
+                    <img src="img/imagen1.png" alt="">
+                    <div class="overlay">
+                        <h3>Imagine Ecuador</h3>
+                        <p>Marketing Digital</p></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/chatbot.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Calculadora</h3>
+                        <p>proyecto calculadora</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <a href="https://www.instagram.com/disegod10/">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseñador Grafico</h3>
+                        <p>Trabajos</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- SECCION PORTAFOLIO -->
+    <!-- <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/chatbot.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/imagen1.png" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto6.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto7.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto8.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto9.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11055.775841826315!2d-78.42736284220254!3d-1.3956482900878404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1696260438415!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Guernica, Buenos Aires, AR
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                telf: 11- 53491919 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: diegomoyanollc@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <form action="Mensaje()">
+
+        <input type="submit">
+
+    </form>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/disegod10/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100084694885821"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/diego-moyano-77a6211b2"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
