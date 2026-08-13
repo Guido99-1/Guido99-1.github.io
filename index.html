@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guido Reyes, desarrollador Full Stack en Ecuador. Sitios web, landing pages y sistemas a medida.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portafolio</title>
+    <title>Guido Reyes — Desarrollador Full Stack en Ecuador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -13,498 +14,302 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Guido</a>
+                <a href="#inicio">Guido</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()">Servicios</a></li>
+                    <li><a href="#tarifas" onclick="seleccionar()">Tarifas</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
+            <div class="header-cta">
+                <a href="#contacto" class="btn btn--primary">Hablemos</a>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </header>
     </div>
 
     <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/hero.jpeg" alt="">
-            </div>
-            <h1>GUIDO REYES</h1>
-            <h2>Desarrollador Full Stack</h2>
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/guido-fabricio-reyes-pullugando-440091277"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://wa.link/hzhmv8"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.facebook.com/guido.reyes.79"><i class="fa-brands fa-facebook-f"></i></a>
-                <!-- <a href="https://www.instagram.com/guido_r_/"><i class="fa-brands fa-instagram"></i></a> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Guido Reyes.</span> Soy ingeniero en Tecnologías de la información y Desarrollador Full Stack . Cuento con gran motivación para avanzar en mi carrera profesional, me destaco por mi compromiso y responsabilidad. Además, valoro la oportunidad de aprender y crecer profesionalmente. Siempre estoy buscando nuevas formas de mejorar mis habilidades y mantenerme actualizado con los últimos avances en tecnología. Creo firmemente en la importancia de la colaboración y la comunicación efectiva, y estoy ansioso por contribuir a un entorno de trabajo dinámico y estimulante.</p>
-
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Estado civil</strong>
-                            Soltero
-                        </li>
-                        <li>
-                            <strong>Fecha de nacimiento</strong>
-                            13-05-1999
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            0969079341
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            guidoreyes99@outlook.es
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            Tungurahua - Baños de Agua Santa
-                        </li>
-                        <li>
-                            <strong>Website</strong>
-                            https://guido99-1.github.io/
-                        </li>
-                        <li>
-                            <strong>linkedin</strong>
-                            https://www.linkedin.com/in/guido-fabricio-reyes-pullugando-440091277
-                        </li>
-                    </ul>
+    <section id="inicio" class="hero">
+        <div class="contenedor-seccion">
+            <div class="hero-texto fade-in">
+                <span class="hero-saludo">Hola 👋 Soy Guido</span>
+                <h1>Desarrollador <span>Full Stack</span></h1>
+                <p>Construyo sitios y sistemas web rápidos, funcionales y a tu medida. Desde landing pages hasta aplicaciones con backend, cuido cada detalle del proyecto hasta el lanzamiento.</p>
+                <div class="hero-ctas">
+                    <a href="#portfolio" class="btn btn--outline">Ver proyectos</a>
+                    <a href="#contacto" class="btn btn--primary">Contratarme</a>
                 </div>
-
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-sharp fa-solid fa-laptop-code"></i>
-                            <span>PROGRAMACIÓN</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
-                        </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>3+</strong>
+                        <span>Proyectos en portafolio</span>
+                    </div>
+                    <div class="stat">
+                        <strong>5+</strong>
+                        <span>Tecnologías dominadas</span>
+                    </div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Compromiso con cada proyecto</span>
                     </div>
                 </div>
             </div>
-            <!-- </head> -->
-            <div>  
-                <button> 
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <a href="https://drive.google.com/file/d/1I28rMctBKIK4lIeUWoMJvIx5d83UcuSK/view?usp=sharing">
-                <span class="overlay"></span></a>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION SKILLS -->
-
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-
-                <!-- Technical Skill -->
-                
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>81%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML </span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Css</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
+            <div class="hero-visual fade-in">
+                <div class="avatar-placeholder">
+                    <img src="img/hero.jpeg" alt="Foto de Guido Reyes">
                 </div>
-                
-                <!-- Professional Skills -->
-                
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>92%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Capacidad de resolver problemas</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Adaptación y aprendizaje continuo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Responsabilidad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </section>
-    
-    <!-- SECCION CURRICULUM -->
-    
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Administración de Sistemas</h4>
-                        <span class="casa">Unidad Educativa Baños</span>
-                        <span class="fecha">2011 - 2017</span>
-                        <p>Bachillerato Técnico en Sistemas</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Ing. Tecnologías de la Información</h4>
-                        <span class="casa">Univeridad Técnica de Ambato</span>
-                        <span class="fecha">2018 - 2023</span>
-                        <p>
-                            <ul>
-                                <li>
-                                    Soporte, administración, diseño de telecomunicaciones y sistemas informáticos.
-                                </li>
-                                <li>
-                                    Programación de software.
-                                </li>
-                                <li>
-                                    Analista de sistema.
-                                </li>
-                            </ul>
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <h3>Cursos</h3>
-                    <div class="item izq">
-                        <h4>Pentesting Web</h4>
-                        <span class="casa">Undemy</span>
-                        <span class="fecha">Junio 2023</span>
-                        <p>Prácticas de un Ethical Hacker Profesional</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Python 3 Plus</h4>
-                        <span class="casa">Undemy</span>
-                        <span class="fecha">Septiembre 2023</span>
-                        <p>Python desde cero - Data Anlysis and Matploy</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>SQL Bootcamp</h4>
-                        <span class="casa">Undemy</span>
-                        <span class="fecha">Septiembre 2023</span>
-                        <p>Learn Enough SQL to be a profesional</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Programación en Python</h4>
-                        <span class="casa">Academia BA</span>
-                        <span class="fecha">Septiembre 2023</span>
-                        <p></p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Tecnico Redes</h4>
-                        <span class="casa">Premier TvNET</span>
-                        <span class="fecha">2022</span>
-                        <p>Instalación de internet, mantenimiento de líneas, trabajo en altura y manejo de fibra óptica.
-                            Aptitudes: 
-                            <ul>
-                                <li>Interconexión de redes IP</li>
-                                <li>Servicios técnicos</li> 
-                                <li>Mantenimiento preventivo</li> 
-                                <li>Instalación de hardware</li> 
-                                <li>Atención al cliente</li> 
-                                <li>Mantenimiento y reparaciones de equipos</li> 
-                                <li>Redes inalámbricas</li> 
-                                <li>Redes de fibra óptica</li> 
-                            </ul>       
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
+                <div class="hero-stack">
+                    <span class="label">Tecnologías</span>
+                    <div class="stack-icons">
+                        <i class="fa-brands fa-html5" title="HTML5"></i>
+                        <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                        <i class="fa-brands fa-js" title="JavaScript"></i>
+                        <i class="fa-brands fa-python" title="Python"></i>
+                        <i class="fa-solid fa-database" title="SQL"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
- <!-- SECCION PORTFOLIO -->
+
+    <!-- SECCION METODOLOGIA -->
+    <section class="metodologia" id="metodologia">
+        <div class="contenedor-seccion">
+            <div class="encabezado fade-in">
+                <span class="eyebrow">Metodología</span>
+                <h2>Llevo cada proyecto hasta el lanzamiento final</h2>
+                <p>Me enfoco en avanzar rápido sin sacrificar calidad, con etapas claras para que sepas en qué va tu proyecto en todo momento.</p>
+                <a href="#contacto" class="btn btn--outline">Hablar del proyecto →</a>
+            </div>
+            <div class="pasos">
+                <div class="paso fade-in">
+                    <span class="num">01</span>
+                    <h3>Análisis y planificación</h3>
+                </div>
+                <div class="paso fade-in">
+                    <span class="num">02</span>
+                    <h3>Diseño y prototipos</h3>
+                </div>
+                <div class="paso fade-in">
+                    <span class="num">03</span>
+                    <h3>Desarrollo y pruebas</h3>
+                </div>
+                <div class="paso fade-in">
+                    <span class="num">04</span>
+                    <h3>Lanzamiento y soporte</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION BENTO / POR QUE TRABAJAR CONMIGO -->
+    <section class="bento">
+        <div class="contenedor-seccion">
+            <div class="bento-grid">
+                <div class="bento-card fade-in">
+                    <h3>Rápido y cumplido</h3>
+                    <p>Organizo el trabajo en etapas claras para cumplir los plazos acordados sin sorpresas.</p>
+                </div>
+                <div class="bento-card fade-in">
+                    <h3>Enfoque MVP</h3>
+                    <p>Primero lanzamos lo esencial funcionando, y sobre eso vamos sumando mejoras según lo que el proyecto necesite.</p>
+                </div>
+                <div class="bento-card fade-in">
+                    <h3>Aprendizaje constante</h3>
+                    <p>Sigo formándome en nuevas tecnologías para ofrecer soluciones actualizadas y eficientes.</p>
+                </div>
+                <div class="bento-card wide fade-in">
+                    <h3>Tecnologías y desarrollo</h3>
+                    <p>Desarrollo con HTML, CSS, JavaScript, Python y SQL, cuidando el rendimiento y las buenas prácticas en cada proyecto.</p>
+                    <div class="stack-icons">
+                        <i class="fa-brands fa-html5" title="HTML5"></i>
+                        <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                        <i class="fa-brands fa-js" title="JavaScript"></i>
+                        <i class="fa-brands fa-python" title="Python"></i>
+                        <i class="fa-solid fa-database" title="SQL"></i>
+                    </div>
+                </div>
+                <div class="bento-card fade-in">
+                    <h3>Soporte después del lanzamiento</h3>
+                    <p>Una vez publicado tu sitio, sigo disponible para ajustes, mantenimiento y nuevas funcionalidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
+        <div class="contenedor-seccion">
+            <div class="encabezado fade-in">
+                <span class="eyebrow">Portafolio</span>
+                <h2>Últimos proyectos</h2>
+            </div>
             <div class="galeria">
-                <div class="proyecto">
-                    <a href="https://www.imagineecuador.com/es/" style="text-decoration:none;text-decoration-color:azure">
-                    <img src="img/imagen1.png" alt="">
-                    <div class="overlay">
+                <a href="https://www.imagineecuador.com/es/" class="proyecto fade-in" target="_blank" rel="noopener">
+                    <div class="proyecto-visual"><img src="img/imagen1.png" alt="Imagine Ecuador"></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-tags">
+                            <span>Marketing Digital</span>
+                            <span>Turismo</span>
+                        </div>
                         <h3>Imagine Ecuador</h3>
-                        <p>Marketing Digital</p></a>
+                        <p>Sitio de presencia digital enfocado en promoción turística.</p>
+                        <span class="ver">Ver proyecto →</span>
+                    </div>
+                </a>
+                <div class="proyecto sin-link fade-in">
+                    <div class="proyecto-visual"><img src="img/chatbot.jpg" alt="Asistente Turístico Baños"></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-tags">
+                            <span>Chatbot</span>
+                            <span>Turismo</span>
+                        </div>
+                        <h3>Asistente Turístico Baños</h3>
+                        <p>Chatbot informativo sobre atractivos turísticos de Baños de Agua Santa.</p>
+                        <span class="ver">Demo próximamente</span>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img/chatbot.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Calculadora</h3>
-                        <p>proyecto calculadora</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <a href="https://www.instagram.com/disegod10/">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseñador Grafico</h3>
-                        <p>Trabajos</p></a>
+                <div class="proyecto sin-link fade-in">
+                    <div class="proyecto-visual"><i class="fa-solid fa-palette"></i></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-tags">
+                            <span>Diseño Gráfico</span>
+                        </div>
+                        <h3>Diseñador Gráfico</h3>
+                        <p>Trabajos de diseño gráfico.</p>
+                        <span class="ver">Detalles próximamente</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section> 
-    <!-- SECCION PORTAFOLIO -->
-    <!-- <section id="portfolio">
-        <h3 class="titulo-seccion">Mis Proyectos</h3>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/chatbot.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="contenedor-seccion">
+            <div class="encabezado fade-in">
+                <span class="eyebrow">Servicios</span>
+                <h2>¿En qué puedo ayudarte?</h2>
             </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/imagen1.png" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
+            <div class="servicios-grid">
+                <div class="servicio-card fade-in">
+                    <div class="icono"><i class="fa-solid fa-code"></i></div>
+                    <h3>Desarrollo web</h3>
+                    <p>Sitios y landing pages rápidas, responsive y listas para producción.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Sitios institucionales</li>
+                        <li><i class="fa-solid fa-check"></i> Landing pages</li>
+                        <li><i class="fa-solid fa-check"></i> Portafolios y CVs online</li>
+                        <li><i class="fa-solid fa-check"></i> Diseño responsive</li>
+                        <li><i class="fa-solid fa-check"></i> Formularios de contacto</li>
+                        <li><i class="fa-solid fa-check"></i> Optimización de velocidad</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn--outline">Solicitar sitio web →</a>
                 </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto3.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto4.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto5.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto6.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
+                <div class="servicio-card fade-in">
+                    <div class="icono"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h3>Apps y sistemas a medida</h3>
+                    <p>Aplicaciones y automatizaciones a medida usando Python y bases de datos SQL.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Backends y lógica de negocio</li>
+                        <li><i class="fa-solid fa-check"></i> Integración con bases de datos</li>
+                        <li><i class="fa-solid fa-check"></i> Automatización de procesos</li>
+                        <li><i class="fa-solid fa-check"></i> APIs e integraciones</li>
+                        <li><i class="fa-solid fa-check"></i> Paneles de administración</li>
+                        <li><i class="fa-solid fa-check"></i> Pruebas y control de calidad</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn--outline">Solicitar sistema →</a>
                 </div>
             </div>
         </div>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto7.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
+    </section>
+
+    <!-- SECCION TARIFAS -->
+    <section id="tarifas" class="tarifas">
+        <div class="contenedor-seccion">
+            <div class="encabezado fade-in">
+                <span class="eyebrow">Tarifas</span>
+                <h2>Cotización a medida</h2>
+                <p>Cada proyecto es distinto, así que prefiero cotizar según el alcance real en vez de fijar precios genéricos. Estos son los tipos de proyecto más comunes:</p>
+            </div>
+            <div class="tarifas-grid">
+                <div class="plan-card fade-in">
+                    <h3>Landing</h3>
+                    <div class="precio">Cotización a medida</div>
+                    <p class="desc">Página única para presentar tu negocio o servicio: información de contacto, mapa, botón de WhatsApp, diseño responsive.</p>
+                    <a href="#contacto" class="btn btn--outline">Consultar</a>
+                </div>
+                <div class="plan-card destacado fade-in">
+                    <span class="badge-popular">Más solicitado</span>
+                    <h3>Sitio completo</h3>
+                    <div class="precio">Cotización a medida</div>
+                    <p class="desc">Varias páginas, galería, formulario de contacto y SEO básico para que tu negocio tenga presencia completa online.</p>
+                    <a href="#contacto" class="btn btn--primary">Consultar</a>
+                </div>
+                <div class="plan-card fade-in">
+                    <h3>Sistema a medida</h3>
+                    <div class="precio">Cotización a medida</div>
+                    <p class="desc">Backend, base de datos, panel de administración o integración de reservas y catálogo.</p>
+                    <a href="#contacto" class="btn btn--outline">Consultar</a>
                 </div>
             </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto8.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto9.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
+            <p class="tarifas-nota">¿Ya tienes un sitio y necesitas mantenimiento o soporte? Escríbeme y lo cotizamos según lo que necesites.</p>
         </div>
-    </section> -->
+    </section>
+
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11055.775841826315!2d-78.42736284220254!3d-1.3956482900878404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1696260438415!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Guernica, Buenos Aires, AR
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                telf: 11- 53491919 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: diegomoyanollc@gmail.com
-                            </li>
-                        </ul>
-                    </div>
+        <div class="contenedor-seccion">
+            <div class="contacto-info fade-in">
+                <span class="eyebrow">Contacto</span>
+                <h2>Hablemos de tu proyecto</h2>
+                <p>Escríbeme por el medio que prefieras y te respondo lo antes posible.</p>
+                <div class="canales">
+                    <a href="mailto:guidoreyes99@outlook.es"><i class="fa-solid fa-envelope"></i> guidoreyes99@outlook.es</a>
+                    <a href="https://wa.me/593969079341" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/guido-fabricio-reyes-pullugando-440091277" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://www.facebook.com/guido.reyes.79" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
                 </div>
             </div>
+            <form class="form-contacto fade-in" id="form-contacto">
+                <input type="text" id="f-nombre" placeholder="¿Cómo te llamas?" required>
+                <input type="text" id="f-contacto" placeholder="Tu correo o número de contacto" required>
+                <textarea id="f-mensaje" placeholder="Cuéntame sobre tu proyecto" required></textarea>
+                <button type="submit" class="btn btn--primary">Enviar mensaje por WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+                <p class="form-nota">Al enviar se abrirá WhatsApp con tu mensaje listo para mandarme.</p>
+            </form>
         </div>
     </section>
 
-    <form action="Mensaje()">
-
-        <input type="submit">
-
-    </form>
-
-    <!-- footer -->
+    <!-- FOOTER -->
     <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://www.instagram.com/disegod10/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100084694885821"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com/in/diego-moyano-77a6211b2"><i class="fa-brands fa-linkedin-in"></i></a>
+        <div class="contenedor-seccion">
+            <div class="footer-top">
+                <div>
+                    <div class="logo"><a href="#inicio">Guido</a></div>
+                    <p class="footer-tagline">Desarrollador Full Stack en Ecuador. Construyo sitios y sistemas web rápidos y funcionales.</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#portfolio">Proyectos</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#tarifas">Tarifas</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+                <div class="footer-redes">
+                    <a href="https://www.linkedin.com/in/guido-fabricio-reyes-pullugando-440091277" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/593969079341" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/guido.reyes.79" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Guido Reyes</span>
+                <span>Hecho con 💚 en Ecuador</span>
+            </div>
         </div>
     </footer>
 

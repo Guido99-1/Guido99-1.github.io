@@ -1,41 +1,51 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
-        menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
-        menuVisible = true;
-    }
+
+// Muestra u oculta el menú responsive
+function mostrarOcultarMenu() {
+    const nav = document.getElementById("nav");
+    menuVisible = !menuVisible;
+    nav.classList = menuVisible ? "responsive" : "";
 }
 
-function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
+function seleccionar() {
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("htmlcss");
-        habilidades[2].classList.add("photoshop");
-        habilidades[3].classList.add("wordpress");
-        habilidades[4].classList.add("drupal");
-        habilidades[5].classList.add("comunicacion");
-        habilidades[6].classList.add("trabajo");
-        habilidades[7].classList.add("creatividad");
-        habilidades[8].classList.add("dedicacion");
-        habilidades[9].classList.add("proyect");
-    }
+
+// Formulario de contacto: arma el mensaje y lo abre en WhatsApp (sin backend)
+const formContacto = document.getElementById("form-contacto");
+if (formContacto) {
+    formContacto.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+        const nombre = document.getElementById("f-nombre").value.trim();
+        const contacto = document.getElementById("f-contacto").value.trim();
+        const mensaje = document.getElementById("f-mensaje").value.trim();
+
+        const texto =
+            `Hola Guido, soy ${nombre}.\n` +
+            `Contacto: ${contacto}\n\n` +
+            `${mensaje}`;
+
+        const url = `https://wa.me/593969079341?text=${encodeURIComponent(texto)}`;
+        window.open(url, "_blank", "noopener");
+    });
 }
 
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
-    efectoHabilidades();
-} 
+// Animación de aparición al hacer scroll
+const elementosFade = document.querySelectorAll(".fade-in");
+if ("IntersectionObserver" in window && elementosFade.length) {
+    const observador = new IntersectionObserver(
+        (entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add("visible");
+                    observador.unobserve(entrada.target);
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+    elementosFade.forEach((el) => observador.observe(el));
+} else {
+    elementosFade.forEach((el) => el.classList.add("visible"));
+}
