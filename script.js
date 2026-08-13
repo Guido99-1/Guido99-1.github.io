@@ -31,13 +31,18 @@ if (formContacto) {
     });
 }
 
-// Animación de aparición al hacer scroll
+// Animación de aparición al hacer scroll, escalonada entre hermanos
 const elementosFade = document.querySelectorAll(".fade-in");
 if ("IntersectionObserver" in window && elementosFade.length) {
     const observador = new IntersectionObserver(
         (entradas) => {
             entradas.forEach((entrada) => {
                 if (entrada.isIntersecting) {
+                    const hermanos = Array.from(
+                        entrada.target.parentElement.children
+                    ).filter((el) => el.classList.contains("fade-in"));
+                    const indice = hermanos.indexOf(entrada.target);
+                    entrada.target.style.transitionDelay = `${Math.max(indice, 0) * 90}ms`;
                     entrada.target.classList.add("visible");
                     observador.unobserve(entrada.target);
                 }
@@ -48,4 +53,37 @@ if ("IntersectionObserver" in window && elementosFade.length) {
     elementosFade.forEach((el) => observador.observe(el));
 } else {
     elementosFade.forEach((el) => el.classList.add("visible"));
+}
+
+// Contador animado para las estadísticas del hero
+const statsEstadisticas = document.querySelectorAll(".hero-stats .stat strong");
+if ("IntersectionObserver" in window && statsEstadisticas.length) {
+    const animarContador = (el) => {
+        const textoFinal = el.textContent.trim();
+        const numero = parseInt(textoFinal, 10);
+        if (Number.isNaN(numero)) return;
+        const sufijo = textoFinal.replace(String(numero), "");
+        const duracion = 900;
+        const inicio = performance.now();
+        const paso = (ahora) => {
+            const progreso = Math.min((ahora - inicio) / duracion, 1);
+            const valorActual = Math.round(numero * progreso);
+            el.textContent = `${valorActual}${sufijo}`;
+            if (progreso < 1) requestAnimationFrame(paso);
+        };
+        requestAnimationFrame(paso);
+    };
+
+    const observadorStats = new IntersectionObserver(
+        (entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    animarContador(entrada.target);
+                    observadorStats.unobserve(entrada.target);
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+    statsEstadisticas.forEach((el) => observadorStats.observe(el));
 }
